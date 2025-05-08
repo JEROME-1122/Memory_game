@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tagesschrift", system-ui;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+}
+
+
+.container{
+    align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+padding: 50px ;
+   
+border-radius: 15px;
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+#grid{
+    width: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+/* border: 1px solid #000; */
+align-items: center;
+justify-content: center;
+margin: 30px 0px;
+
+}
+
+.memory_head{
+    font-weight: bold;
+    font-size: 40px;
+    color: #2c3e50;
+}
+.btn{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+    padding: 15px 30px;
+    border: none;
+    color: #2c3e50;
+    font-weight: bold;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: 0.40s;
+    outline: none;
+}
+.btn:hover{
+    transform: scale(1.05);
+    transition: 0.40s;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    color: #fff;
+}
+
+.bg_img{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: 0.40s;
+}
+
+.bg_img:hover{
+    transform: scale(1.03);
+    transition: 0.40s;
+  
+}
+
+
+@media screen and  (max-width:699px) {
+    #grid{
+        width: 400px;
+    }
+    .bg_img{
+        width: 90px;
+        height: 90px;
+    }
+    .memory_head{
+        font-size: 30px;
+    }
+}
+
+@media screen and  (max-width:599px) {
+    #grid{
+        width: 350px;
+    }
+    .bg_img{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and  (max-width:499px) {
+    .container{
+        padding: 30px;
+    }
+    #grid{
+        width: 300px;
+    }
+    .bg_img{
+        width: 65px;
+        height: 65px;
+    }
+}
+@media screen and  (max-width:399px) {
+    .container{
+        padding: 30px;
+    }
+    #grid{
+        width: 280px;
+    }
+    .bg_img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
